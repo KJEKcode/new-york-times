@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York Times Search</title>
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1><i class="far fa-newspaper"></i> New York Times Search</h1>
+    </header>
+    <main>
+        
+        <section id="search-section">
+            <h2><i class="fas fa-newspaper"></i></i> Search Parameters</h2>
+            <form method="post" id="search-form">
+                <fieldset>
+                    <label for="search-term">Search Term</label>
+                    <input type="text" name="search-term" id="search-term">
+                </fieldset>
+                <fieldset>
+                    <label for="record-number">Number of Records to Retrieve</label>
+                    <input type="number" name="record-number" id="record-number">
+                </fieldset>
+                <fieldset>
+                    <label for="start-year">Start Year (Optional)</label>
+                    <input type="text" name="start-year" id="start-year">
+                </fieldset>
+                <fieldset>
+                    <label for="end-year">End Year (Optional)</label>
+                    <input type="text" name="end-year" id="end-year">
+                </fieldset>
+                <div>
+                    <button type="submit" id="submit-button"><i class="fas fa-search"></i> Search</button>
+                    <button type="reset" id="reset-button"><i class="far fa-trash-alt"></i> Clear Results</button>
+                </div>
+
+            </form>
+        </section>
+        
+        <section class="response-section">
+            <h2><i class="far fa-calendar-alt"></i> Top Articles</h2>
+
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/5960fedbfa.js" crossorigin="anonymous"></script>
+    <!-- <script src=""></script> -->
+</body>
+
+</html>
